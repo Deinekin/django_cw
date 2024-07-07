@@ -1,0 +1,17 @@
+[
+  {
+    "model": "mailing.mailing",
+    "pk": 3,
+    "fields": {
+      "start_time": "2024-08-01T23:00:00Z",
+      "end_time": "2024-08-01T23:30:00Z",
+      "period": "M",
+      "status": "C",
+      "message": null,
+      "owner": 3,
+      "clients": [
+        3
+      ]
+    }
+  }
+]

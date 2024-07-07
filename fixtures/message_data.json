@@ -1,0 +1,20 @@
+[
+  {
+    "model": "mailing.message",
+    "pk": 1,
+    "fields": {
+      "message_title": "new msg",
+      "message_body": "im a message",
+      "owner": null
+    }
+  },
+  {
+    "model": "mailing.message",
+    "pk": 2,
+    "fields": {
+      "message_title": "One more msg",
+      "message_body": "yeah that's me111",
+      "owner": null
+    }
+  }
+]

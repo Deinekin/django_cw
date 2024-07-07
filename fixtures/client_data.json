@@ -1,0 +1,32 @@
+[
+  {
+    "model": "mailing.client",
+    "pk": 1,
+    "fields": {
+      "email": "client@mail.ru",
+      "name": "Client Clientovich",
+      "comment": null,
+      "owner": 4
+    }
+  },
+  {
+    "model": "mailing.client",
+    "pk": 2,
+    "fields": {
+      "email": "test@mail.ru",
+      "name": "test testovich",
+      "comment": null,
+      "owner": 3
+    }
+  },
+  {
+    "model": "mailing.client",
+    "pk": 3,
+    "fields": {
+      "email": "ryumin.svyat@yandex.ru",
+      "name": "svyat22",
+      "comment": null,
+      "owner": 1
+    }
+  }
+]

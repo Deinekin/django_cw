@@ -1,0 +1,25 @@
+{% extends 'mailing/base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                    <h1 class="card-title">{{ object.message_title }}</h1>
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                        <li>{{ object.message_body }}</li>
+                    </ul>
+                    <div class="btn-group">
+                        {% if user.is_superuser or object.owner == user %}
+                        <a href="{% url 'mailing:edit_message' object.pk %}"
+                           class="btn btn-lg btn-block btn-outline-primary">Изменить</a>
+                        <a href="{% url 'mailing:delete_message' object.pk %}"
+                           class="btn btn-lg btn-block btn-outline-danger">Удалить</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
